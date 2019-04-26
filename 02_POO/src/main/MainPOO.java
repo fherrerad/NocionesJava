@@ -1,0 +1,86 @@
+package main;
+
+import entidades.Direccion;
+//siempre que usemos una clase que no este en nuestro paquete,
+//tenemos que importarla
+import entidades.Persona;
+
+public class MainPOO {
+	public static void main(String[] args) {
+		Persona p = new Persona();
+		p.nombre = "Felix";
+		p.edad = 39;
+		p.peso = 82;
+		
+		Persona p2 = new Persona();
+		p2.nombre ="Marta";
+		p2.edad = 45;
+		p2.peso = 67.8;
+		
+		p.andar(10);
+		//p.metros = 45;
+		//metros esta declarado como private eso quiere decir que solo se puede usar en la clase que lo ha declarado
+		
+		Persona p3 = p2;//con esto estamos apuntando al mismo objeto donde apunte p2
+		p2.andar(25);//p3 y p2 estan accediendo al mismo objeto por lo que lo puedo modificar con cualquiera de los dos
+		System.out.println(p3.getMetros());
+		
+		Persona p4 = p;
+		p4.edad = 55;
+		System.out.println(p.edad);
+		
+		cambiarEdad(p4);
+		System.out.println(p4.edad);
+		
+		int numero = 5;
+		cambiarNumero(numero);
+		System.out.println(numero);
+		
+		Persona p5 = crearPersona();
+		
+		Persona p6 = new Persona("Ramon",54,80,0);
+		
+		System.out.println(p5.nombre);
+		System.out.println(p5.peso);
+		Persona p7 = null;//si no sabemos a que lo vamos a inicializar podemos coger el concepto de null. Cuidado con los null
+		//ya que pueden dar un nullpointerexception y romper el ejecucion del programa
+		//System.out.println(p7.edad);
+		String direccionString ="Calle diamante 58 madrid 28052";
+		
+		
+		//
+		int cp = 07345;//esto mes base octal - no se va a mostrar correctamente
+		System.out.println(cp);
+		
+		p7 = new Persona("Ana",66,58,0);
+		Direccion d = new Direccion();
+		p7.direccion = d;
+		p7.direccion.tipoVia = "Calle";
+		d.tipoVia = "Avenida";
+		System.out.println(d);
+		
+	}
+	
+	public static void cambiarEdad(Persona p) {
+		p.edad = 66;
+	}
+	
+	public static void cambiarNumero(int numero) {
+		numero = 10;
+	}
+	
+	public static void crearPersona2() {
+		Persona p = new Persona();
+		p.edad = 51;
+		//trabajamos con la persona... cuando sale se pierde la referencia
+		
+	}
+	
+	public static Persona crearPersona() {
+		Persona p = new Persona();
+		p.edad = 51;
+		return p;// no perdemos la referencia
+		
+	}
+
+}

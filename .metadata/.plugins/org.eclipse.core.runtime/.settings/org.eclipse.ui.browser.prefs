@@ -1,0 +1,3 @@
+browsers=<?xml version\="1.0" encoding\="UTF-8"?>\n<web-browsers current\="0">\n<system/>\n<external location\="/usr/bin/firefox" name\="Firefox"/>\n</web-browsers>
+eclipse.preferences.version=1
+internalWebBrowserHistory=http\://localhost\:8080/05_Web/inicio.html|*|http\://localhost\:8080/05_Web/ControladorUsuario?nombreUsuario\=ana&passwordUsuario\=1234|*|http\://localhost\:8080/05_Web/ControladorUsuario|*|file\:/home/pue/Documents/workspace-sts-3.9.6.RELEASE/.metadata/.plugins/org.springsource.ide.eclipse.commons.gettingstarted/dashboard/1555919081733/index.html|*|file\:/home/pue/Downloads/sts-bundle/sts-3.9.6.RELEASE/plugins/org.springsource.ide.eclipse.commons.gettingstarted_3.9.6.201809180630-RELEASE/resources/welcome/index.html|*|

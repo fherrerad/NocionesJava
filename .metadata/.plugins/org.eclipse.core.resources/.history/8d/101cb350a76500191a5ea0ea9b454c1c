@@ -1,0 +1,9 @@
+package javabeans;
+/*
+ * Notaciones javabean es un convenio java sobre la creacion de objetos simples
+ * tambien llamados POJOS (Plain Old Java Object)
+ * Basicamente son objetos sencillos que no tienen herencia ni logica complicada
+ */
+public class Persona {
+
+}

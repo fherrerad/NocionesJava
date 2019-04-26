@@ -1,0 +1,12 @@
+
+public class MainArrays {
+	public static void main(String[] args) {
+		int numero = 5;
+		int [] arrayNumeros = new int [5];
+		//este tipo de arrays son arrays estaticos, es decir,
+		//una vez inicializado el array a un tamano, siempre sera ese tamano (no crece)
+		arrayNumeros[0] = 23;
+		
+	}
+
+}

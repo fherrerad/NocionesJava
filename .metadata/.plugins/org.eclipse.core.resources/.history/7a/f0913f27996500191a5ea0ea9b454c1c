@@ -1,0 +1,22 @@
+package main;
+
+//siempre que usemos una clase que no este en nuestro paquete,
+//tenemos que importarla
+import entidades.Persona;
+
+public class MainPOO {
+	public static void main(String[] args) {
+		Persona p = new Persona();
+		p.nombre = "Felix";
+		p.edad = 39;
+		p.peso = 82;
+		
+		Persona p2 = new Persona();
+		p2.nombre ="Marta";
+		p2.edad = 35;
+		p2.peso = 55.4;
+		
+		p.andar(10);
+	}
+
+}

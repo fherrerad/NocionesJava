@@ -1,0 +1,30 @@
+
+public class MainFunciones {
+	//una funcion, que es la funcion pricipal, en java se conocen
+	//como metodos - No existen funciones globales, todos los metodos estan
+	//asociados a una clase
+	public static void main(String[] args) {
+		saludo("felix");
+		saludo("marta");
+		int resultado = sumar(2,4);
+		System.out.println(resultado);
+		
+	}
+	
+	/*
+	 * 1- visibilidad
+	 * 2- si es estatico o dinamico, si es estatico se pone "static"
+	 * 3- valor de retorno, void cuando no queremos retornar nada
+	 * 4- nombre del metodo
+	 * 5- argumentos de entrada
+	 */
+	public static void saludo(String nombre) {
+		System.out.println("yo te saludo " + nombre);
+	}
+	
+	public static int sumar(int numero1, int numero2) {
+		int resultado = numero1 + numero2;
+		return resultado;
+	}
+	
+}

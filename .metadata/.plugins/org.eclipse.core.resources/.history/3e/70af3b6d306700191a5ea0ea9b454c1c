@@ -1,0 +1,15 @@
+package modelo.negocio;
+
+import modelo.entidades.Usuario;
+
+//Esta capa se encarga de llevar la logica de negocio de nuestra aplicacion
+//dicho de otra manera, la funcionalidad de nuestra aplicacion, para lo
+//que se se programo.
+public class GestorUsuario {
+	
+	public boolean validarUsuario(Usuario user) {
+		//esta capa es la que se comunica con la base de datos
+		return false;
+	}
+
+}
